@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista Virtual de Solicitações</title>
+  <link rel="stylesheet" href="lista.css">
+<script src="lista_virtual.js"defer></script>
+</head>
+<body>
+  <h1>Lista Virtual de Solicitações</h1>
+
+  <div id="global">
+
+
+    <div id="atualizar">
+
+      <label for="codSaida">Código da Saída</label><br>
+      <input type="text" id="codSaida">
+      <label for="dataSolicitacao">Data da solitação:</label><br>
+      <input type="text" id="dataSolicitacao">
+      <label for="motivo">Motivo:</label><br>
+      <input type="text" id="motivo">
+      <label for="localDestino">Local do destino:</label><br>
+      <input type="text" id="localDestino">
+      <label for="status">Status:</label><br>
+      <input type="text" id="status">
+      <label for="nomeAluno">Nome do Professor:</label><br>
+      <input type="text" id="nomeAluno">
+      <label for="nomeProfessor">Nome do Aluno:</label><br>
+      <input type="text" id="nomeProfessor">
+      <label for="horaSaida">hora da Saída:</label><br>
+      <input type="time" id="horaSaida">
+      <label for="horaRetorno">hora do Retorno:</label><br>
+      <input type="time" id="horaRetorno">
+      <label for="codAluno">Código do Aluno:</label><br>
+      <input type="text" id="codAluno">
+      <label for="codProfessor">Código do Professor:</label><br>
+      <input type="text" id="codProfessor">
+      <select id="opcao">
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="buscar">Buscar</option>
+        <option value="Aprovar" >Aprovar</option>
+        <option value="Retorno" >Retorno</option>
+        <option value="Reprovar" >Reprovar</option>
+      </select>
+    </div>
+    <div id="lista">
+      <button id="listar">LISTAR</button>
+      <div id="resp"></div>
+          </div>
+
+  </div>
+
+
+  <nav>
+    <a href="./saidas.html">Cadastrar</a>
+    <a href="./listar_saidas.html">Listar</a>
+    <a href="./atualizar_saidas.html">Atualizar</a>
+    <a href="./deletar_saidas.html">Deletar</a>
+    <a href="./consultar_saidas.html">Consultar</a>
+    <a href="../professor/cadastrar_professor.html">Professores</a>
+    <a href="/index.html">Alunos</a>
+</nav>
+
+</body>
+</html>
